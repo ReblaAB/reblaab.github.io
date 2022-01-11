@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap');
     </style>
@@ -24,6 +25,7 @@
       }
       section {
         display: flex;
+        flex-wrap: wrap;
       }
       article {
         align-items: center;
@@ -36,9 +38,9 @@
       }
     </style>
     <script>
-      function copy(value) {
-        navigator.clipboard.writeText(value)
-        alert(value + ' copied to clipboard')
+      function copy(name, hex) {
+        navigator.clipboard.writeText(hex)
+        alert(name + ' hex code - ' + hex + ' - copied to clipboard')
       }
     </script>
   </head>
@@ -55,25 +57,25 @@
     <section>
       <article
         style="background-color: #fec20f; color: black"
-        onclick="copy('fec20f')"
+        onclick="copy('Yellow', 'fec20f')"
       >
         <span>Yellow</span><span>#fec20f</span>
       </article>
       <article
         style="background-color: #f5f5f5; color: black"
-        onclick="copy('f5f5f5')"
+        onclick="copy('Marble', 'f5f5f5')"
       >
         <span>Marble</span><span>#f5f5f5</span>
       </article>
       <article
         style="background-color: #dcdcdc; color: black"
-        onclick="copy('dcdcdc')"
+        onclick="copy('Grey','dcdcdc')"
       >
         <span>Grey</span><span>#dcdcdc</span>
       </article>
       <article
         style="background-color: #444444; color: white"
-        onclick="copy('444444')"
+        onclick="copy('Granite','444444')"
       >
         <span>Granite</span><span>#444444</span>
       </article>
@@ -82,25 +84,25 @@
     <section>
       <article
         style="background-color: #3c95a5; color: black"
-        onclick="copy('3c95a5')"
+        onclick="copy('Turquoise','3c95a5')"
       >
         <span>Turquoise</span><span>#3c95a5</span>
       </article>
       <article
         style="background-color: #005a6e; color: white"
-        onclick="copy('005a6e')"
+        onclick="copy('Dark Turquoise','005a6e')"
       >
         <span>Dark Turquoise</span><span>#005a6e</span>
       </article>
       <article
         style="background-color: #843c46; color: white"
-        onclick="copy('843c46')"
+        onclick="copy('Red','843c46')"
       >
         <span>Red</span><span>#843c46</span>
       </article>
       <article
         style="background-color: #631d2a; color: white"
-        onclick="copy('631d2a')"
+        onclick="copy('Burgundy','631d2a')"
       >
         <span>Burgundy</span><span>#631d2a</span>
       </article>
@@ -108,25 +110,25 @@
     <section>
       <article
         style="background-color: #486679; color: white"
-        onclick="copy('486679')"
+        onclick="copy('Blue Grey','486679')"
       >
         <span>Blue Grey</span><span>#486679</span>
       </article>
       <article
         style="background-color: #2d3745; color: white"
-        onclick="copy('2d3745')"
+        onclick="copy('Dark Blue Grey','2d3745')"
       >
         <span>Dark Blue Grey</span><span>#2d3745</span>
       </article>
       <article
         style="background-color: #005c63; color: white"
-        onclick="copy('005c63')"
+        onclick="copy('Green','005c63')"
       >
         <span>Green</span><span>#005c63</span>
       </article>
       <article
         style="background-color: #003d42; color: white"
-        onclick="copy('003d42')"
+        onclick="copy('Dark Green','003d42')"
       >
         <span>Dark Green</span><span>#003d42</span>
       </article>
