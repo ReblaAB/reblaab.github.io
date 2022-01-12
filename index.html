@@ -40,7 +40,12 @@
     <script>
       function copy(name, hex) {
         navigator.clipboard.writeText(hex)
-        alert(name + ' hex code - ' + hex + ' - copied to clipboard')
+        .then(() => {
+          alert(name + ' hex code - ' + hex + ' - copied to clipboard')
+        })
+        .catch(() => {
+          alert('could not copy the hex code ;(')
+        })
       }
     </script>
   </head>
